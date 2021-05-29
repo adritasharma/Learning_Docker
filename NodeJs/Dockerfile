@@ -32,7 +32,7 @@ ENTRYPOINT ["npm" , "start"]
 EXPOSE 8081
 
 
-# Commands
+# Instructions
 
 # Build Command - It creates the imege that can be view under Images in Docker Desktop
     # docker build -t test2/node .
