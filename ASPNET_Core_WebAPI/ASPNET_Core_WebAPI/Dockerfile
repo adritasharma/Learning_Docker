@@ -7,9 +7,9 @@
 # Base aspnet runtime Image
 FROM mcr.microsoft.com/dotnet/aspnet:3.1 AS base
 WORKDIR /app
-EXPOSE 5000
+EXPOSE 8082
 
-ENV ASPNETCORE_URLS=http://+:5000
+ENV ASPNETCORE_URLS=http://+:8082
 
 ## Stage 2
 
@@ -38,8 +38,8 @@ ENTRYPOINT ["dotnet", "ASPNET_Core_WebAPI.dll"]
 ## Instructions
 
 # Build Command - It creates the image that can be view under Images in Docker Desktop
-    # docker build -t test3/aspnetcore .
+    # docker build -t test4/aspnetcore .
 
 # Run Command - It runs the image.(Creates a container) We can see it under Containers/Apps in Docker Desktop
- # If we browse 5000, it should route to 5000 within the container 
-    # docker run -p  5000:5000 test3/aspnetcore
+ # If we browse 8082, it should route to 5000 within the container 
+    # docker run -p  8082:5000 test4/aspnetcore
