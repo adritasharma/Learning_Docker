@@ -2024,6 +2024,33 @@
         "runtime": {
           "bin/placeholder/Demo.db.dll": {}
         }
+      },
+      "Demo.repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Demo.db": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Demo.repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Demo.repository.dll": {}
+        }
+      },
+      "Demo.service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Demo.db": "1.0.0",
+          "Demo.repository": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Demo.service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Demo.service.dll": {}
+        }
       }
     }
   },
@@ -6701,11 +6728,22 @@
       "type": "project",
       "path": "../Demo.db/Demo.db.csproj",
       "msbuildProject": "../Demo.db/Demo.db.csproj"
+    },
+    "Demo.repository/1.0.0": {
+      "type": "project",
+      "path": "../demo.repository/Demo.repository.csproj",
+      "msbuildProject": "../demo.repository/Demo.repository.csproj"
+    },
+    "Demo.service/1.0.0": {
+      "type": "project",
+      "path": "../Demo.service/Demo.service.csproj",
+      "msbuildProject": "../Demo.service/Demo.service.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Demo.db >= 1.0.0",
+      "Demo.service >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.6",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.1.5",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 5.0.6"
@@ -6743,6 +6781,9 @@
           "projectReferences": {
             "C:\\Adrita\\Workspace\\Learning_Docker\\ASPNETCORE_PgSQL\\Demo.db\\Demo.db.csproj": {
               "projectPath": "C:\\Adrita\\Workspace\\Learning_Docker\\ASPNETCORE_PgSQL\\Demo.db\\Demo.db.csproj"
+            },
+            "C:\\Adrita\\Workspace\\Learning_Docker\\ASPNETCORE_PgSQL\\Demo.service\\Demo.service.csproj": {
+              "projectPath": "C:\\Adrita\\Workspace\\Learning_Docker\\ASPNETCORE_PgSQL\\Demo.service\\Demo.service.csproj"
             }
           }
         }

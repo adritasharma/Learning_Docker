@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Demo.db\Demo.db.csproj" />
+    <ProjectReference Include="..\Demo.service\Demo.service.csproj" />
   </ItemGroup>
 
 

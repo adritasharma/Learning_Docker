@@ -1,0 +1,14 @@
+C:\Adrita\Workspace\Learning_Docker\ASPNETCORE_PgSQL\Demo.service\bin\Debug\netcoreapp3.1\Demo.service.deps.json
+C:\Adrita\Workspace\Learning_Docker\ASPNETCORE_PgSQL\Demo.service\bin\Debug\netcoreapp3.1\Demo.service.dll
+C:\Adrita\Workspace\Learning_Docker\ASPNETCORE_PgSQL\Demo.service\bin\Debug\netcoreapp3.1\Demo.service.pdb
+C:\Adrita\Workspace\Learning_Docker\ASPNETCORE_PgSQL\Demo.service\bin\Debug\netcoreapp3.1\Demo.db.dll
+C:\Adrita\Workspace\Learning_Docker\ASPNETCORE_PgSQL\Demo.service\bin\Debug\netcoreapp3.1\Demo.repository.dll
+C:\Adrita\Workspace\Learning_Docker\ASPNETCORE_PgSQL\Demo.service\bin\Debug\netcoreapp3.1\Demo.db.pdb
+C:\Adrita\Workspace\Learning_Docker\ASPNETCORE_PgSQL\Demo.service\bin\Debug\netcoreapp3.1\Demo.repository.pdb
+C:\Adrita\Workspace\Learning_Docker\ASPNETCORE_PgSQL\Demo.service\obj\Debug\netcoreapp3.1\Demo.service.csprojAssemblyReference.cache
+C:\Adrita\Workspace\Learning_Docker\ASPNETCORE_PgSQL\Demo.service\obj\Debug\netcoreapp3.1\Demo.service.csproj.CoreCompileInputs.cache
+C:\Adrita\Workspace\Learning_Docker\ASPNETCORE_PgSQL\Demo.service\obj\Debug\netcoreapp3.1\Demo.service.AssemblyInfoInputs.cache
+C:\Adrita\Workspace\Learning_Docker\ASPNETCORE_PgSQL\Demo.service\obj\Debug\netcoreapp3.1\Demo.service.AssemblyInfo.cs
+C:\Adrita\Workspace\Learning_Docker\ASPNETCORE_PgSQL\Demo.service\obj\Debug\netcoreapp3.1\Demo.service.csproj.CopyComplete
+C:\Adrita\Workspace\Learning_Docker\ASPNETCORE_PgSQL\Demo.service\obj\Debug\netcoreapp3.1\Demo.service.dll
+C:\Adrita\Workspace\Learning_Docker\ASPNETCORE_PgSQL\Demo.service\obj\Debug\netcoreapp3.1\Demo.service.pdb

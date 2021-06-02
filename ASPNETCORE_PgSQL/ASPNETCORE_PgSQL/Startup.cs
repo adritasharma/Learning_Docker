@@ -2,7 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using demo.repository.Implementations;
+using demo.repository.Interfaces;
 using Demo.db;
+using Demo.service.Implementations;
+using Demo.service.Interfaces;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -32,7 +36,8 @@ namespace ASPNETCORE_PgSQL
             services.AddControllers();
 
             services.AddTransient<AnniversarySeeder>();
-
+            services.AddScoped(typeof(IOccasionTypesRepository), typeof(OccasionTypesRepository));
+            services.AddScoped(typeof(IOccasionTypesService), typeof(OccasionTypesService));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

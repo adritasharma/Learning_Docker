@@ -113,3 +113,7 @@ C:\Adrita\Workspace\Learning_Docker\ASPNETCORE_PgSQL\ASPNETCORE_PgSQL\bin\Debug\
 C:\Adrita\Workspace\Learning_Docker\ASPNETCORE_PgSQL\ASPNETCORE_PgSQL\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
 C:\Adrita\Workspace\Learning_Docker\ASPNETCORE_PgSQL\ASPNETCORE_PgSQL\obj\Debug\netcoreapp3.1\Demo.web.csproj.CoreCompileInputs.cache
 C:\Adrita\Workspace\Learning_Docker\ASPNETCORE_PgSQL\ASPNETCORE_PgSQL\obj\Debug\netcoreapp3.1\Demo.web.MvcApplicationPartsAssemblyInfo.cache
+C:\Adrita\Workspace\Learning_Docker\ASPNETCORE_PgSQL\ASPNETCORE_PgSQL\bin\Debug\netcoreapp3.1\Demo.repository.dll
+C:\Adrita\Workspace\Learning_Docker\ASPNETCORE_PgSQL\ASPNETCORE_PgSQL\bin\Debug\netcoreapp3.1\Demo.service.dll
+C:\Adrita\Workspace\Learning_Docker\ASPNETCORE_PgSQL\ASPNETCORE_PgSQL\bin\Debug\netcoreapp3.1\Demo.service.pdb
+C:\Adrita\Workspace\Learning_Docker\ASPNETCORE_PgSQL\ASPNETCORE_PgSQL\bin\Debug\netcoreapp3.1\Demo.repository.pdb

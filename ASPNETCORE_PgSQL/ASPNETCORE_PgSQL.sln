@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.web", "ASPNETCORE_PgSQ
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.db", "Demo.db\Demo.db.csproj", "{339552F1-098A-4EDD-9D03-9170883A8F1B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.repository", "demo.repository\Demo.repository.csproj", "{4251ABFF-23C9-4184-9F7B-FE2B08DFB2FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.service", "Demo.service\Demo.service.csproj", "{4647BCA0-E03B-441C-A66F-8F020E686115}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{339552F1-098A-4EDD-9D03-9170883A8F1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{339552F1-098A-4EDD-9D03-9170883A8F1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{339552F1-098A-4EDD-9D03-9170883A8F1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4251ABFF-23C9-4184-9F7B-FE2B08DFB2FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4251ABFF-23C9-4184-9F7B-FE2B08DFB2FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4251ABFF-23C9-4184-9F7B-FE2B08DFB2FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4251ABFF-23C9-4184-9F7B-FE2B08DFB2FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4647BCA0-E03B-441C-A66F-8F020E686115}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4647BCA0-E03B-441C-A66F-8F020E686115}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4647BCA0-E03B-441C-A66F-8F020E686115}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4647BCA0-E03B-441C-A66F-8F020E686115}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

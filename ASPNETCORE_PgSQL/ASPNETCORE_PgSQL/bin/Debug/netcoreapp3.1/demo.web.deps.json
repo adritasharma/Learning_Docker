@@ -25,6 +25,7 @@
       "Demo.web/1.0.0": {
         "dependencies": {
           "Demo.db": "1.0.0",
+          "Demo.service": "1.0.0",
           "Microsoft.EntityFrameworkCore.Tools": "5.0.6",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "3.1.5",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "5.0.6",
@@ -1785,6 +1786,29 @@
         },
         "compile": {
           "Demo.db.dll": {}
+        }
+      },
+      "Demo.repository/1.0.0": {
+        "dependencies": {
+          "Demo.db": "1.0.0"
+        },
+        "runtime": {
+          "Demo.repository.dll": {}
+        },
+        "compile": {
+          "Demo.repository.dll": {}
+        }
+      },
+      "Demo.service/1.0.0": {
+        "dependencies": {
+          "Demo.db": "1.0.0",
+          "Demo.repository": "1.0.0"
+        },
+        "runtime": {
+          "Demo.service.dll": {}
+        },
+        "compile": {
+          "Demo.service.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
@@ -4291,6 +4315,16 @@
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
     },
     "Demo.db/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Demo.repository/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Demo.service/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
