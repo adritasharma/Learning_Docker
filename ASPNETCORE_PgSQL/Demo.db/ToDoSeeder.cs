@@ -26,15 +26,15 @@ namespace Demo.db
             {
                 _db.ToDos.Add(new ToDo
                 {
-                    Item = "Workout",
+                    Item = "1Workout",
                 });
                 _db.ToDos.Add(new ToDo
                 {
-                    Item = "Cook",
+                    Item = "1Cook",
                 });
                 _db.ToDos.Add(new ToDo
                 {
-                    Item = "Read a book",
+                    Item = "1Read a book",
                 });
                 _db.SaveChanges();
             }
