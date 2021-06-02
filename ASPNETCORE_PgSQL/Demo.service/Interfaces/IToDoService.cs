@@ -5,8 +5,8 @@ using System.Text;
 
 namespace Demo.service.Interfaces
 {
-    public interface IOccasionTypesService
+    public interface IToDoService
     {
-        IEnumerable<OccasionType> GetAllOccasionTypes();
+        IEnumerable<ToDo> GetAllToDos();
     }
 }

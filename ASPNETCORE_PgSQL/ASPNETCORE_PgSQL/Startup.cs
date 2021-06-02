@@ -31,13 +31,13 @@ namespace ASPNETCORE_PgSQL
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<AnniversaryContext>(options =>
-                       options.UseNpgsql(Configuration.GetConnectionString("AnniversaryDb")));
+            services.AddDbContext<ToDoContext>(options =>
+                       options.UseNpgsql(Configuration.GetConnectionString("ToDoDb")));
             services.AddControllers();
 
-            services.AddTransient<AnniversarySeeder>();
-            services.AddScoped(typeof(IOccasionTypesRepository), typeof(OccasionTypesRepository));
-            services.AddScoped(typeof(IOccasionTypesService), typeof(OccasionTypesService));
+            services.AddTransient<ToDoSeeder>();
+            services.AddScoped(typeof(IToDoRepository), typeof(ToDoRepository));
+            services.AddScoped(typeof(IToDoService), typeof(ToDoService));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -61,7 +61,7 @@ namespace ASPNETCORE_PgSQL
 
             using (var scope = app.ApplicationServices.CreateScope())
             {
-                var seeder = scope.ServiceProvider.GetService<AnniversarySeeder>();
+                var seeder = scope.ServiceProvider.GetService<ToDoSeeder>();
                 seeder.Seed().Wait();
             }
         }

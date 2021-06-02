@@ -9,11 +9,11 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Demo.db
 {
-    public class AnniversarySeeder
+    public class ToDoSeeder
     {
-        private readonly AnniversaryContext _db;
+        private readonly ToDoContext _db;
 
-        public AnniversarySeeder(AnniversaryContext db)
+        public ToDoSeeder(ToDoContext db)
         {
             _db = db;
         }
@@ -22,19 +22,19 @@ namespace Demo.db
         {
             _db.Database.Migrate();
 
-            if (!_db.OccasionTypes.Any())
+            if (!_db.ToDos.Any())
             {
-                _db.OccasionTypes.Add(new OccasionType
+                _db.ToDos.Add(new ToDo
                 {
-                    OccasionTypeName = "BirthDay",
+                    Item = "Workout",
                 });
-                _db.OccasionTypes.Add(new OccasionType
+                _db.ToDos.Add(new ToDo
                 {
-                    OccasionTypeName = "Marriage Anniversary",
+                    Item = "Cook",
                 });
-                _db.OccasionTypes.Add(new OccasionType
+                _db.ToDos.Add(new ToDo
                 {
-                    OccasionTypeName = "Death Anniversary",
+                    Item = "Read a book",
                 });
                 _db.SaveChanges();
             }

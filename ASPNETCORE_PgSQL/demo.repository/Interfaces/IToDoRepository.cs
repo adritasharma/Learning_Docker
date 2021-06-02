@@ -5,8 +5,8 @@ using System.Text;
 
 namespace demo.repository.Interfaces
 {
-    public interface IOccasionTypesRepository
+    public interface IToDoRepository
     {
-        public IEnumerable<OccasionType> GetAllOccasionTypes();
+        public IEnumerable<ToDo> GetAllToDos();
     }
 }

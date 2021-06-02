@@ -10,20 +10,20 @@ namespace Demo.web.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class OccasionTypeController : ControllerBase
+    public class ToDoController : ControllerBase
     {
 
-        private readonly IOccasionTypesService _occasionTypeService;
+        private readonly IToDoService _toDoService;
 
-        public OccasionTypeController(IOccasionTypesService repository)
+        public ToDoController(IToDoService repository)
         {
-            _occasionTypeService = repository ?? throw new ArgumentNullException(nameof(repository));
+            _toDoService = repository ?? throw new ArgumentNullException(nameof(repository));
         }
 
         [HttpGet]
         public IActionResult Get()
         {
-            var res = _occasionTypeService.GetAllOccasionTypes();
+            var res = _toDoService.GetAllToDos();
             return Ok(res);
         }
 

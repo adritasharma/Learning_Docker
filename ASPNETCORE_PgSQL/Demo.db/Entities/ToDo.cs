@@ -6,13 +6,13 @@ using System.Text;
 
 namespace Demo.db.Entities
 {
-    [Table("OccasionTypes")]
-    public class OccasionType
+    [Table("ToDos")]
+    public class ToDo
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int OccasionTypeId { get; set; }
-        public string OccasionTypeName { get; set; }
+        public int Id { get; set; }
+        public string Item { get; set; }
 
     }
 }
