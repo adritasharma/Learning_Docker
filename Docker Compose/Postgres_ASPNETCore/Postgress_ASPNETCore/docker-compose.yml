@@ -5,12 +5,32 @@ services:
         build:
             context: .
             dockerfile: Dockerfile
+        links:
+            - postgresserver
+        depends_on:
+            - "postgresserver"
         ports:
-            -"5000:5000"
+            - "5000:5000"
         networks: 
-            - todoapp-neywork
+            - todoapp-network
 
+    postgresserver:
+        image: postgres
+        restart: always
+        ports:
+            - 5432:5432
+        environment:
+              POSTGRES_PASSWORD: password
+              POSTGRES_USER: "postgres"
+              POSTGRES_DB: "ToDoApp"
+        volumes:
+                - pgdata:/var/lib/postgresql/data
+        networks: 
+                - todoapp-network
 
 networks: 
-    todoapp-neywork:
+    todoapp-network:
         driver: bridge
+
+volumes:
+    pgdata:
