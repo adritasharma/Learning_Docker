@@ -13,19 +13,19 @@ namespace PgSql_ASPNET_Core.Controllers
     public class ToDoController : ControllerBase
     {
 
-        private readonly IToDoRepository _toDoRepository;
+        // private readonly IToDoRepository _toDoRepository;
 
-        public ToDoController(IToDoRepository repository)
-        {
-            _toDoRepository = repository ?? throw new ArgumentNullException(nameof(repository));
-        }
+        // public ToDoController(IToDoRepository repository)
+        // {
+        //     _toDoRepository = repository ?? throw new ArgumentNullException(nameof(repository));
+        // }
 
-        [HttpGet]
-        public IActionResult Get()
-        {
-            var res = _toDoRepository.GetAllToDos();
-            return Ok(res);
-        }
+        // [HttpGet]
+        // public IActionResult Get()
+        // {
+        //     var res = _toDoRepository.GetAllToDos();
+        //     return Ok(res);
+        // }
 
     }
 }

@@ -28,12 +28,12 @@ namespace PgSql_ASPNET_Core
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<ToDoContext>(options =>
-                      options.UseNpgsql(Configuration.GetConnectionString("ToDoDb")));
+            //services.AddDbContext<ToDoContext>(options =>
+            //          options.UseNpgsql(Configuration.GetConnectionString("ToDoDb")));
             services.AddControllers();
 
-            services.AddTransient<ToDoSeeder>();
-            services.AddScoped(typeof(IToDoRepository), typeof(ToDoRepository));
+         //   services.AddTransient<ToDoSeeder>();
+            //services.AddScoped(typeof(IToDoRepository), typeof(ToDoRepository));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -55,11 +55,11 @@ namespace PgSql_ASPNET_Core
                 endpoints.MapControllers();
             });
 
-            using (var scope = app.ApplicationServices.CreateScope())
-            {
-                var seeder = scope.ServiceProvider.GetService<ToDoSeeder>();
-                seeder.Seed().Wait();
-            }
+            // using (var scope = app.ApplicationServices.CreateScope())
+            // {
+            //     var seeder = scope.ServiceProvider.GetService<ToDoSeeder>();
+            //     seeder.Seed().Wait();
+            // }
         }
     }
 }

@@ -44,12 +44,12 @@ ENTRYPOINT ["dotnet", "Demo.web.dll"]
 # LEGACY LINKING
 
 ## This will spin up a  postgres image
-    # docker run -d --name my-postgres -e POSTGRES_PASSWORD=dimapur postgres
+    # docker run -d --name my-postgres -e POSTGRES_PASSWORD=password postgres
 
     ## Note
     ### appsettings.json
     ####        "ConnectionStrings": {
-    ####            "ToDoDb": "Host=my-postgres;port=5432;;Username=postgres;Password=dimapur;Database=ToDoApp"
+    ####            "ToDoDb": "Host=my-postgres;port=5432;;Username=postgres;Password=password;Database=ToDoApp"
     ####         },
 
 
