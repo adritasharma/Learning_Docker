@@ -1,0 +1,8 @@
+version: '2.1'
+services:
+ webapi:
+   build:
+     context: .
+     dockerfile: Dockerfile
+   ports:
+     - 8091:3000

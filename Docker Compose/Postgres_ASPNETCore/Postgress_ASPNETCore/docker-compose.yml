@@ -1,28 +1,27 @@
 version: '2'
 
 services: 
-    aspnetcore:
+    aspnetcoreapi:
         build:
             context: .
             dockerfile: Dockerfile
         links:
-            - postgresserver
+            - postgresserverdb
         depends_on:
-            - "postgresserver"
+            - "postgresserverdb"
         ports:
             - "5000:5000"
         networks: 
             - todoapp-network
 
-    postgresserver:
+    postgresserverdb:
         image: postgres
         restart: always
         ports:
             - 5432:5432
         environment:
+              POSTGRES_DB: ToDoApp
               POSTGRES_PASSWORD: password
-              POSTGRES_USER: "postgres"
-              POSTGRES_DB: "ToDoApp"
         volumes:
                 - pgdata:/var/lib/postgresql/data
         networks: 

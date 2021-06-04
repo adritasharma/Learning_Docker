@@ -20,3 +20,5 @@ WORKDIR /app
 COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "Postgress_ASPNETCore.dll"]
 
+
+#docker exec -it postgress_aspnetcore_postgresserver_1  psql -U postgres --password
